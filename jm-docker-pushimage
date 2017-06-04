@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# $1 registry host:port
+# $2 registry username
+# $3 registry user password
+# $4 image name
+# $5 version
+
+REGISTRY=$1
+
+echo "Log in to registry: ${REGISTRY}"
+sudo docker login -u $2 -p $3 ${REGISTRY}
+
+IMAGE=$4
+VERSION=$5
+
+echo "Deploying Image: $IMAGE"
+sudo docker tag $IMAGE:$VERSION ${REGISTRY}/$IMAGE:$VERSION
+sudo docker push ${REGISTRY}/$IMAGE:$VERSION
