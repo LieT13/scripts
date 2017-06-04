@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# -d detached mode (background)
+sudo docker-compose up -d

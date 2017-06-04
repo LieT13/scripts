@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# $1 = tar file
+# $2 = image tag
+sudo docker save -o $1 $2
+

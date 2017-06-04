@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# $1 output file
+# $2 email de la clave pública del receptor del fichero (debe estar importada)
+# $3 input file
+gpg --output $1 --encrypt --recipient $2 $3

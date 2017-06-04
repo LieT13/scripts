@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "Restarting .profile..."
+. ~/.profile
+echo "Done!"
+

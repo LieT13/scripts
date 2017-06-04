@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# $1 output file (.gpg)
+# $2 email de la clave a exportar
+gpg --output $1 --export $2

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# $1 image name
+# $2 version
+sudo docker rm $1
+sudo docker build . -t $1:$2

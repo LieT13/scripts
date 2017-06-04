@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# $1 = csr file
+openssl req -in $1 -noout -text

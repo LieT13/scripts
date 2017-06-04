@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# $1 email de la clave a revocar
+gpg --output revoke.asc --gen-revoke $1
+echo "revoke cert created as revoke.asc"

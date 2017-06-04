@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# -f tail
+sudo docker-compose logs -f

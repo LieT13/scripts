@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# $1 container id
+# $2 command
+sudo docker exec -it $1 $2
+

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# $1 output file
+# $2 input file (.gpg o .sig)
+gpg --output $1 --decrypt $2

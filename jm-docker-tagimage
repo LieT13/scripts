@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# $1 = image id
+# $2 = new tag
+docker tag $1 $2
+

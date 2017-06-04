@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# $1 output file (.sig)
+# $2 input file
+gpg --output $1 --sign $2

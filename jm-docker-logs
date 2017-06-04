@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# $1 container id
+sudo docker logs $1
+

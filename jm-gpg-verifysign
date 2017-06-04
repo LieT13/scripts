@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# $1 sign file (.sig)
+# $2 input file
+gpg --verify $1 $2
