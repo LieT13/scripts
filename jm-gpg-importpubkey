@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# $1 input file (.gpg)
+gpg --import $1
