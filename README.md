@@ -1,2 +1,2 @@
 # scripts
-scripts and tools
+personal scripts and tools
