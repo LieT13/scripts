@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# $1 tar file
+# $2 folder
+tar -czvf $1 $2
