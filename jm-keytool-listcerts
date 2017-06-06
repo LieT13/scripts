@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# $1 keystore file
+# $2 certificate alias
+keytool -list -keystore $1 -alias $2
