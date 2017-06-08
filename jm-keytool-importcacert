@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $1 certificate store pass
+# $1 certificates store pass
 # $2 certificate alias
 # $3 certificate file
 keytool -keystore $JAVA_HOME/jre/lib/security/cacerts -storepass $1 -noprompt -trustcacerts -importcert -alias $2 -file $3

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# $1 certificates store
+# $2 certificates store pass
+# $3 certificate alias
+# $4 certificate file
+keytool -keystore $1 -storepass $2 -noprompt -importcert -alias $3 -file $4
