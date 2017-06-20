@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# $1 package file
+sudo dpkg --install $1
