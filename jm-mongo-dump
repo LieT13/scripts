@@ -1,7 +1,8 @@
 #!/bin/sh
 
-# $1 username
-# $2 password
-# $3 dump path
-#mongodump --host mongodb1.example.net --port 37017 --username $1 --password "$2" --out $3
-mongodump --username $1 --password "$2" --out $3
+# $1 db name
+# $2 username
+# $3 password
+# $4 dump path
+#mongodump --db $1 --host mongodb1.example.net --port 37017 --username $2 --password "$3" --out $4
+mongodump --db $1 --username $2 --password "$3" --out $4
