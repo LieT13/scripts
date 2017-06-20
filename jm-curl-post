@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# $1 json data
+# $2 url
+curl -X POST -d '$1' -H 'content-type: application/json' $2
