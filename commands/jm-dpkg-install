@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# $1 package file or help
+if [ $1 = "help" ]; then
+  echo "\$1: package file or help"
+  exit 0
+fi
+
+sudo dpkg --install $1
+# if fails due to missing dependencies, execute 'sudo apt-get -f install'
