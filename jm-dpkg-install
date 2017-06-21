@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# $1 package file
-sudo dpkg --install $1
-# if fails due to missing dependencies, execute 'sudo apt-get -f install'
