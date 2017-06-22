@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# $1 cer file
+# $2 private key file
+CER_MD5="$(openssl x509 -noout -modulus -in $1 | openssl md5)"
+PK_MD5="$(openssl rsa -noout -modulus -in $2 | openssl md5)"
+
+if [ "$CER_MD5" = "$PK_MD5" ]; then
+  echo "Private key matches the certificate!"
+else
+  echo "Private key DOSN'T matches the certificate!"
+fi
