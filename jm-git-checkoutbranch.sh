@@ -16,3 +16,4 @@ for i in `ls -d */`; do
 	git checkout $branch
 	cd -
 done;
+echo "Done!"
