@@ -1,4 +1,3 @@
 #!/bin/sh
 
-openssl req -out sslcert.csr -newkey rsa:2048 -nodes -keyout private.key -config san.cnf
-
+openssl req -out sslcert.csr -newkey rsa:2048 -nodes -keyout private.key -config ./resources/san.cnf

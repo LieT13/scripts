@@ -1,3 +1,3 @@
 #!/bin/sh
 
-kubectl create -f ./kubernetes-secret.yaml
+kubectl create -f ./resources/kubernetes-secret.yaml

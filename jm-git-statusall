@@ -1,0 +1,14 @@
+#!/bin/bash
+
+clear
+
+for dir in ./*/; do
+  echo
+  echo "******************************"
+  echo "  ${dir}"
+  echo "******************************"
+  dir=${dir%*/}
+  cd ${dir}
+  git status
+  cd -
+done
