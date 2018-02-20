@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# $1 playbook file
+ansible-playbook $1 -f 10 # parallelism level of 10
