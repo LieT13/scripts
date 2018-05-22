@@ -1,3 +1,10 @@
 #!/bin/sh
 
-sudo /etc/init.d/nscd restart
+echo "Removing /etc/resolv.conf..."
+sudo rm /etc/resolv.conf
+sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
+echo "Updating resolvconf..."
+sudo resolvconf -u
+echo "Restarting network-manager service..."
+sudo service network-manager restart
+echo "Done!"
